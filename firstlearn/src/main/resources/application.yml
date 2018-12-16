@@ -1,0 +1,11 @@
+user:
+  is: 1001
+  address:
+    id: 1002
+    detail: adfaa
+  birthday: 1999/8/8
+  sex: true
+  password: 123456
+  username: yangxingege
+  list: [aa,vv,cc,dd]  #在.yml中list的赋值方式
+  map: {username: yyy,uang: ooo} #在.yml中map的赋值方式

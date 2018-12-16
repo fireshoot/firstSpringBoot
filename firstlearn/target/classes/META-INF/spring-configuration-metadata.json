@@ -1,0 +1,54 @@
+{
+  "groups": [
+    {
+      "name": "user",
+      "type": "org.yangxin.springboot.dao.User",
+      "sourceType": "org.yangxin.springboot.dao.User"
+    }
+  ],
+  "properties": [
+    {
+      "name": "user.address",
+      "type": "org.yangxin.springboot.dao.Address",
+      "sourceType": "org.yangxin.springboot.dao.User"
+    },
+    {
+      "name": "user.birthday",
+      "type": "java.util.Date",
+      "sourceType": "org.yangxin.springboot.dao.User"
+    },
+    {
+      "name": "user.is",
+      "type": "java.lang.Integer",
+      "sourceType": "org.yangxin.springboot.dao.User",
+      "defaultValue": 0
+    },
+    {
+      "name": "user.list",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.yangxin.springboot.dao.User"
+    },
+    {
+      "name": "user.map",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "org.yangxin.springboot.dao.User"
+    },
+    {
+      "name": "user.password",
+      "type": "java.lang.String",
+      "sourceType": "org.yangxin.springboot.dao.User"
+    },
+    {
+      "name": "user.sex",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.yangxin.springboot.dao.User",
+      "defaultValue": false
+    },
+    {
+      "name": "user.username",
+      "type": "java.lang.String",
+      "sourceType": "org.yangxin.springboot.dao.User"
+    }
+  ],
+  "hints": []
+}
