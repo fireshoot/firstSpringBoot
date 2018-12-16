@@ -2,6 +2,7 @@ package org.yangxin.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ImportResource;
 
 /**
  * @author yangxin
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 //标明SpringBoot的入口类
 @SpringBootApplication
+@ImportResource({"classpath:addressSpring.xml"})
 public class Application {
     //常规的java程序入口
     public static void main(String[] args){

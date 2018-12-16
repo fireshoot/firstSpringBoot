@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
  * @author yangxin
  * @time 2018/12/16  8:50
  */
-@Component
 public class Address {
     private int id;
     private String detail;
