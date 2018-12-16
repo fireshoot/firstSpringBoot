@@ -2,6 +2,7 @@ package org.yangxin.springboot.dao;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -13,15 +14,13 @@ import java.util.Map;
  * @time 2018/12/16  8:49
  */
 @Component
-//@ConfigurationProperties(prefix = "user")
+@ConfigurationProperties(prefix = "user")
+@PropertySource({"classpath:user.properties"})
 public class User {
-    @Value(value = "#{2+3}")
     private int is;
-    @Value(value = "${user.username}")
     private String username;
     private String password;
     private Date birthday;
-    @Value("true")
     private boolean sex;//true表示男
     private List<String> list;
     private Map<String,Object> map;
