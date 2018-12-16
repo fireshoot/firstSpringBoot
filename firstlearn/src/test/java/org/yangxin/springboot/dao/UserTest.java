@@ -18,13 +18,13 @@ import static org.junit.Assert.*;
 public class UserTest {
 
     @Autowired
-    private Address address;
+    private User user;
 
 
     @Test
     public void TestDemo(){
 
-        System.out.println("Address:"+address);
+        System.out.println("User:"+user);
 
     }
 
