@@ -18,7 +18,7 @@ import org.yangxin.springboot.controller.IndexServlet;
 /*这个注解会在整个springBoot工程启动的时候，扫描
 整个工程的Servlet组件，并且配置到环境中能够被识别。
 */
-//@ServletComponentScan
+@ServletComponentScan
 public class Application {
     //常规的java程序入口
     public static void main(String[] args){

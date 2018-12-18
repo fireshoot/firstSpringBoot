@@ -12,7 +12,7 @@ import java.io.IOException;
  * @time 2018/12/18  9:55
  */
 
-//servlet使用@WebServlet注解来映射URL地址
+//servlet使用@WebServlet注解来映射URL地址 ,urlPatterns是具体的url地址
 //@WebServlet(urlPatterns = "/index.html")
 public class IndexServlet extends HttpServlet {
     @Override
