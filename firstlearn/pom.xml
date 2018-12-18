@@ -36,6 +36,28 @@
             <optional>true</optional>
         </dependency>
 
+        <!-- SpringBoot 官方是不推荐使用Jsp这个引擎模板的，所以他的默认配置中没有配置的Jsp支持。
+             如果要使用Jsp那么需要添加jsp的依赖包：jstl标签和jsp引擎。
+        -->
+        <dependency>
+            <groupId>org.apache.taglibs</groupId>
+            <artifactId>taglibs-standard-spec</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.taglibs</groupId>
+            <artifactId>taglibs-standard-impl</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+            <version>8.5.34</version>
+        </dependency>
+
+
     </dependencies>
 
     <!-- Package as an executable jar -->
