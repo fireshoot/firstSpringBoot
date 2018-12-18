@@ -57,6 +57,14 @@
             <version>8.5.34</version>
         </dependency>
 
+        <!-- FreeMaker是SpringBoot默认支持，我们使用FreeMaker模板的时候，我们需要像jsp一样引入他的依赖。
+             我们只需要引入启动器就可以了。
+         -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+
 
     </dependencies>
 
