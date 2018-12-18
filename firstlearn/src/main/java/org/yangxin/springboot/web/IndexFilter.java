@@ -9,7 +9,7 @@ import java.io.IOException;
  * @time 2018/12/18  10:28
  */
 //urlPatterns 是拦截的目标地址
-@WebFilter(urlPatterns = "/index.html")
+//@WebFilter(urlPatterns = "/index.html")
 public class IndexFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
