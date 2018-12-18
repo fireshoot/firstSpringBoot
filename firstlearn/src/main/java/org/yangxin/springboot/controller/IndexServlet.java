@@ -13,7 +13,7 @@ import java.io.IOException;
  */
 
 //servlet使用@WebServlet注解来映射URL地址
-@WebServlet(urlPatterns = "/index.html")
+//@WebServlet(urlPatterns = "/index.html")
 public class IndexServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
