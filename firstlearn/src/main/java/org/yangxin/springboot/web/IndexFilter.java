@@ -17,9 +17,7 @@ import java.io.IOException;
 public class IndexFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-
     }
-
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest rq=(HttpServletRequest)servletRequest;
@@ -30,9 +28,7 @@ public class IndexFilter implements Filter {
         filterChain.doFilter(servletRequest, servletResponse);
         System.out.println("MyFilter 拦截器放行");
     }
-
     @Override
     public void destroy() {
-
     }
 }
