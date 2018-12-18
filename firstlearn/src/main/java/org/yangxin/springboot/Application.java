@@ -40,7 +40,7 @@ public class Application {
     @Bean
     public FilterRegistrationBean getFilterBean(){
         FilterRegistrationBean bean=new FilterRegistrationBean(new IndexFilter());
-        bean.addUrlPatterns("/index.html");
+        bean.addUrlPatterns("/*");
         return bean;
     }
 
