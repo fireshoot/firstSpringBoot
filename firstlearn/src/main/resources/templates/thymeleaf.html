@@ -5,7 +5,10 @@
     <title>thymeleaf templates</title>
 </head>
 <body>
-
+    <!-- thymeleaf的输出，和jsp、FreeMaker不一样，使用thymeleaf有几种使用方式
+         1.thymeleaf依附于某个标签显示，<div th:text="${student.id}"></div>
+         2.如果想独立的显示，那么需要使用[[${}}]]这样的形式显示。
+    -->
     <div th:text="${student.getId}"></div>
     [[${student.getUsername}]]
 </body>

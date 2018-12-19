@@ -66,10 +66,10 @@
         </dependency>
 
         <!-- 在SpringBoot还支持另外一种模板引擎，thymeleaf，使用他之前需要先将依赖引入-->
-        <dependency>
+   <!--     <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
+        </dependency>-->
 
 
     </dependencies>
