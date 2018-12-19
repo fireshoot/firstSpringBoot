@@ -27,7 +27,7 @@ public class DruidConfiguration {
         return  new DruidDataSource();
     }
 
-   // @Bean
+    //@Bean
     public ServletRegistrationBean getViewServlet(){
         ServletRegistrationBean bean=new ServletRegistrationBean(new StatViewServlet());
         bean.setUrlMappings(Arrays.asList(new String[]{"/druid/*"}));
