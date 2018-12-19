@@ -27,7 +27,7 @@ public class DruidConfiguration {
         return  new DruidDataSource();
     }
 
-    @Bean
+   // @Bean
     public ServletRegistrationBean getViewServlet(){
         ServletRegistrationBean bean=new ServletRegistrationBean(new StatViewServlet());
         bean.setUrlMappings(Arrays.asList(new String[]{"/druid/*"}));
@@ -39,7 +39,7 @@ public class DruidConfiguration {
         return bean;
     }
 
-    @Bean
+    //@Bean
     public FilterRegistrationBean getViewFilter(){
         FilterRegistrationBean bean=new FilterRegistrationBean(new WebStatFilter());
         bean.setUrlPatterns(Arrays.asList(new String[]{"/*"}));//设置拦截地址
