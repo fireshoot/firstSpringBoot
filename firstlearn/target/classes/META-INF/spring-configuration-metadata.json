@@ -1,6 +1,12 @@
 {
   "groups": [
     {
+      "name": "spring.datasource.druid",
+      "type": "javax.sql.DataSource",
+      "sourceType": "org.yangxin.springboot.config.DruidConfiguration",
+      "sourceMethod": "dataSource()"
+    },
+    {
       "name": "user",
       "type": "org.yangxin.springboot.dao.User",
       "sourceType": "org.yangxin.springboot.dao.User"

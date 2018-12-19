@@ -71,6 +71,29 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>-->
 
+        <!-- 使用Mysql添加JDBC的启动器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <!-- 使用阿里巴巴的数据源 druid，但是druid数据源使用的是log4j日志框架，在SpringBoot
+             框架默认使用的是slf4j+log-back，所以我们在使用druid框架时，需要将这两个东西引入。
+             log4j、log4j2、slf4j+log-back的区别：
+             1.log4j和log4j2不是同一个作者写的，两者并没有什么联系。
+             2.log4j、slf4j+log-back是一个作者写的，log4j是最先写出来的，受到广泛的欢迎，于是
+             作者在log4j的基础上开发出slf4j+log-back框架。
+        -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.10</version>
+        </dependency>
+
 
     </dependencies>
 
